@@ -8,7 +8,7 @@ import Header from './components/Header';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header data={data}/>
+    <Header title={data.logo} />
     <Beers list={data.cards} />
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,12 +1,11 @@
-function Header({data}) {
-    
-    const {logo} = data;
+import {Component} from 'react';
 
-    return (
-        <div className="header">
-            <h1>{logo}</h1>
-        </div>
-    )
+class Header extends Component{
+    render() {
+        return (
+            <header>{this.props.title}</header>
+        )
+    }
 };
 
 export default Header;
